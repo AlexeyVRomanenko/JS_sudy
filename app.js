@@ -1,58 +1,23 @@
-//camelCase
+// number
+const num = 42
+const float = 42.42
+const pow = 10e3
+console.log(pow)
 
-//1 переменные
-let firstName = 'Alexey'
-const lastName = 'Romanenko' //string
-let age = 35 //number
-const isProgrammer = true //boolean
+console.log('MAX_SAFE_INTEGER', Number.MAX_SAFE_INTEGER)
+console.log(Math.pow(2, 53) - 1)
+console.log('MAX_SAFE_INTEGER', Number.MAX_SAFE_INTEGER)
+console.log('MAX_VALUE', Number.MAX_VALUE)
+console.log('MIN_VALUE', Number.MIN_VALUE)
 
-console.log(firstName + ' ' + lastName)
+const stringInt = '42'
+const stringFloat = '42.42'
+console.log(Number.parseInt(stringInt) + 2)
+console.log(Number(stringInt) + 2)
+console.log(+stringInt + 2)
 
-//2 Мутирование
-console.log('Имя человека: ' + firstName + ', а возраст: ' + age)
+console.log(Number.parseFloat(stringFloat) + 2)
 
-//const lastNAme2 = prompt(message = 'Введите фамилию:')
-
-//3 Операторы
-const currentYear = 2022
-const birthYear = 1987
-const age2 = currentYear - birthYear
-console.log(age2)
-
-//Типы данных
-console.log(typeof firstName)
-console.log(typeof isProgrammer)
-console.log(typeof age)
-console.log(typeof lastName)
-
-
-// 5 Приоритет операций
-
-//6 условные операторы
-const courceStatus = 'pending' //ready, fail, pending
-if (courceStatus === 'ready') {
-    console.log('курс готов и его можно проходить')
-}
-else if (courceStatus == 'pending')
-{
-    console.log('курс в процессе')
-}
-else {
-    console.log('курс не получился')
-}
-
-const isReady = true
-if (isReady)
-{
-    console.log('Все готово!')
-}
-else {
-    console.log('Все no готово!')
-}
-
-isReady ? console.log('Все готово!') : console.log('Все no готово!')
-
-//7 БУлевая логика
-
-
-
+console.log(0.4 + 0.2)
+console.log(2 / 5 + 1 / 5)
+console.log(Number.parseFloat((0.4 + 0.2).toFixed(4)))
